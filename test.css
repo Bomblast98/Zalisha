@@ -1,0 +1,182 @@
+
+    .topnav{
+        overflow: hidden;
+        background-color: #3fad3f;
+    }
+    .topnav a{
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 16px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .topnav a:hover{
+        background-color: #00b359;
+        color: white;
+    }
+    .topnav a.active{
+        background-color: #4CAF50;
+        color: black;
+    }
+    .topnav .icon{
+      display: none;
+    }
+    @media screen and (max-width: 700px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    
+    @media screen and (max-width: 700px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: none;
+        text-align: left;
+      }
+    }
+.button3{
+        position: relative;
+        left: 43%;
+        width:fit-content;
+        height: 30px;
+        border-radius: 4px;
+        border: none;
+    }
+    .button2{
+        position: relative;
+        left: 45%;
+        height: 30px;
+        width: 200px;
+        border-radius: 4px;
+        border: none;
+    }
+    .button1{
+        position:relative;
+        left: 0%;
+        height: 30px;
+        border-radius: 4px;
+        border: none;
+    }
+    .flex-one{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      background-color: none;
+    }
+    .flex-one-left {
+      font-weight: lighter;
+    }
+    
+    .flex-one-right {
+      padding-left: 70px;
+      
+    }
+    @media (max-width: 800px) {
+      .flex-one {
+        flex-direction: column;
+      }
+    }
+    .column{
+        float:left;
+        padding: 0px;
+        height: 250px;
+    }
+    .left, .right, .middle, .middle2{
+        width: 25%;
+    }
+    .flex-img {
+        display: flex;
+        background-color: none;
+        color: white;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        
+      }
+      .flex-img-one{
+        padding-top: 5px;
+        margin: 6px;
+      }
+      .flex-img-two{
+        padding-top: 5px;
+        margin: 6px;
+      }
+      @media (max-width: 800px) {
+        .flex-img-one, .flex-img-two {
+          flex-direction: column;
+        }
+      }
+    .row:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .button{
+        background-color: #2eb82e;
+        color: white;
+        cursor: pointer;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        background-color: none;
+        
+      }
+      .flex-container > div {
+        background-color: transparent;
+        text-align: left;
+        padding-left: 50px;
+        padding: 0px;
+        width: 50px;
+      }
+      .flex-container1 {
+        display: flex;
+        flex-direction: row;
+        background-color: none;
+      }
+      .flex-container1 > div {
+        background-color: transparent;
+        text-align: left;
+        padding-left: 50px;
+        padding: 0px;
+      }
+    .flex-container2 {
+        display: flex;
+        flex-direction: row;
+        font-size: 24px;
+        background-color: none;
+        text-align: center;
+      }
+      .flex-item {
+        background-color: transparent;
+        padding-left: 50px;
+        padding: 17px;
+        color: white;
+      }
+      div.text{
+        font-family: 'calibri light';
+      }
+      @media screen and (max-width: 600px) {
+        div.text {
+          font-size: 26px;
+        }
+      }
+      @media screen and (min-width: 601px) {
+        div.text {
+          font-size: 33px;
+        }
+      }
+      @media screen and (max-width:620px) {
+        .topnav, .column, .flex-container, .flex-container1, .flex-container2, .flex-img, .flex-item, .row:after {
+          width: 100%;
+        }
+      }
